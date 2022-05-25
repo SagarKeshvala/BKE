@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BKE</title>
-    <link>http://example.org/</link>
+    <link>https://marvelous-cendol-d9b25a.netlify.app/</link>
     <description>Recent content on BKE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 May 2022 09:16:39 +0530</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 09:16:39 +0530</lastBuildDate><atom:link href="https://marvelous-cendol-d9b25a.netlify.app/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

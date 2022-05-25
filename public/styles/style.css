@@ -192,7 +192,7 @@
     color: #196fb8;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 5px 0;
     text-transform: uppercase;
     -webkit-transition: 0.3s;
@@ -490,8 +490,6 @@
   }
   
   .branchen-section {
-    background: url(/images/BKE-Softwareentwickler-Technologiedienstleister-Bildverarbeitungs.jpg);
-    background-size: cover;
     padding: 2rem 0 4rem 0;
   }
   
