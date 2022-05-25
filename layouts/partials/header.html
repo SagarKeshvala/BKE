@@ -1,0 +1,59 @@
+<header>
+    <section class="top-nav">
+      <div class="container">
+        <div class="top-wrapper">
+          <div class="top-phone-msg">
+            <a href="tel:+49 61 51 500 19 94">
+              <i class="fa fa-phone"></i>
+              <span>+49 61 51 500 19 94</span>
+            </a>
+            <a href="kontakt.html"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <div class="right-icons">
+            <a
+              href="https://www.youtube.com/channel/UCdPEo3fLn8fQNDqlBEyz1jw"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.xing.com/profile/Martin_Brake" target="_blank">
+              <i class="fa-brands fa-xing"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/martin-brake-0ba38a41/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="navigation">
+      <div class="main-nav">
+        <div class="contaner">
+          <div id="navbar">
+            <div class="logo">
+              <a href="{{ .Site.BaseURL }}"
+                ><img src="{{ .Site.Params.logo }}" alt=""
+              /></a>
+            </div>
+            <input class="nav-checkbox" type="checkbox" id="click" />
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                {{ $currentPage := . }}
+                {{ $menu := .Site.Menus.main }}
+                {{ range $index, $element := $menu }}
+                    <li class =" {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                        <a href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>

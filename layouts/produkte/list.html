@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="owl-carousel owl-theme">
+  {{range .Params.slides}}
+  <div class="img">
+    <img src="{{.image}}" alt="">
+    <div class="sli-btn">
+      <button>
+        <a href="{{ .btnUrl }}">{{.btnText}}</a>
+      </button>
+    </div>
+  </div>
+  {{end}}
+  </div>
+
+  <div class="slider-text produkte-text">
+    <div class="container">
+      <div class="produkte-slide-text first-section">
+        <h2>
+          <span>{{.Params.heroTitle}}<br>{{.Params.heroSubtitle}}</span>
+        </h2>
+      </div>
+    </div>
+    
+  </div>
+
+    <div class="container">
+      {{.Content}}
+    </div>
+{{ end }}

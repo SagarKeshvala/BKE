@@ -1,0 +1,53 @@
+{{ define "main"}}
+<section class="top-section">
+    <div class="referenzen-img">
+      <div class="container">
+        <div class="img-text referenzen-text">
+          <h2>{{.Params.heroTitle}}</h2>
+          <h3>
+            <span>
+              {{.Params.heroSubtitle}}
+            </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="caraosel">
+    <div class="container">
+      <div class="referenzen-owl owl-carousel owl-theme">
+
+        {{range .Params.slides}}
+        <div class="slide-with-img-txt">
+          <div class="img-txt">
+            <div class="refe-img">
+              <a href="{{.imageLink}}">
+                <img src="{{.image}}" alt="" />
+              </a>
+            </div>
+            <div class="refe-text">
+              <h5>{{.bigHeading}}</h5>
+              <p>{{.smallHeading}}</p>
+            </div>
+          </div>
+          <div class="bottom-text">
+           {{.bottomText}}
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+
+  <div class="refe-bottom-area">
+    <div class="container">
+      <h3>Fachartikel</h3>
+      <a target="_blank" href="https://www.yumpu.com/de/document/read/62417639/stahlmarkt-92018-september/32">
+      <img src="/images/stahlmarkt.png" alt="" />
+    </a>
+      <p>Große Lücken bei der Digitalisierung in der Blechbearbeitung</p>
+    </div>
+  </div>
+
+{{end}}

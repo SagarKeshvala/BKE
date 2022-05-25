@@ -1,0 +1,18 @@
+{{$heading := .Get 0}}
+{{$text := .Get 1}}
+{{$image := .Get 2}}
+<div id="Restblecherfassung" class="text-image second-text-img-wrapper">
+    <div class="container">
+      <div class="text-img-wrapper">
+        <div class="img-area second-img">
+          <img src="{{$image}}" alt="" />
+        </div>
+        <div class="text-area second-text-area">
+          <h3>{{$heading}}</h3>
+          <p>
+            {{$text}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

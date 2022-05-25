@@ -1,0 +1,14 @@
+{{$title := .Get 0}}
+{{$url := .Get 1}}
+{{$image := .Get 2}}
+
+
+<div class="partner-img">
+    <a href="{{$url}}">
+      <img
+        src="{{$image}}"
+        alt=""
+      />
+    </a>
+    <p>{{$title}}</p>
+  </div>

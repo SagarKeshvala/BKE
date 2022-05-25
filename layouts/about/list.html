@@ -1,0 +1,22 @@
+{{ define "main"}}
+<section class="top-section">
+    <div class="back-img">
+      <div class="container">
+        <div class="img-text">
+          <h2>{{.Params.heroTitle}}</h2>
+          <h3>
+            <span>
+              {{.Params.heroSubtitle}}
+            </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="uber-text-area">
+    <div class="container">
+      {{.Content}}
+    </div>
+  </div>
+{{end}}

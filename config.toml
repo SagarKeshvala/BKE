@@ -1,0 +1,6 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'BKE'
+
+[params]
+logo = "/images/BKE_Logo.svg"

@@ -1,0 +1,45 @@
+{{ define "main"}}
+ <!-- ******SLIDER******* -->
+
+ <div class="owl-carousel owl-theme">
+   {{ range .Params.sliderImage }}
+    <div class="img">
+      <img src="{{ .image | absURL }}" alt="">
+    </div>
+   {{end}}
+   </div>
+    
+  <div class="slider-text">
+    <div class="container">
+      <div class="first-section">
+        <h2>
+          {{.Params.heroTitle}}
+        </h2>
+      </div>
+      <div class="second-section">
+        <h3>
+          <span>{{.Params.heroSubtitle}}</span>
+        </h3>
+      </div>
+      <button class="slider-btn btn">
+        <a href="#more"> <i class="fa-solid fa-down-long"></i>Mehr zu uns </a>
+      </button>
+    </div>
+  </div>
+
+  <section id="more" class="main-second">
+    <div class="container">
+      {{.Content}}
+      <h3>
+        BKE - Wir führen Ihre Softwareprojekte mit innovativen Lösungen zum
+        Erfolg!
+      </h3> 
+      <button class="main-second-btn btn">
+        <a href="kontakt.html">
+          <i class="fa-solid fa-envelope"></i>
+          Fordern sie uns heraus
+        </a>
+      </button>
+    </div>
+  </section>
+{{ end }}
